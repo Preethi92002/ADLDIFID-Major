@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:C="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuracy Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Accuracy Plot</h1>
+      <p>In our exploration of image forgery detection, we assembled a dataset comprising authentic and forged images.
+        Employing advanced deep learning techniques, we trained a detection model and rigorously
+    evaluated its performance, generating an accuracy plot to visualize key metrics like accuracy. Through this process,
+    we gained valuable insights into the efficacy of our model and its potential for enhancing digital image forensics.</p>
+    </div>
+    <div class="container1">
+      <img src="{{ url_for('static', filename='uploads/acc.jpg') }}" alt="Image 1">
+        <img src="{{ url_for('static', filename='uploads/loss.jpg') }}" alt="Image 2">
+        <img src="{{ url_for('static', filename='uploads/accuracy.png') }}" alt="Image 3">
+        <img src="{{ url_for('static', filename='uploads/metrix.png') }}" alt="Image 4">
+    </div>
+</body>
+</html>

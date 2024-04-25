@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Test Output</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hello you are logged in.</h1>
+    <br>
+    <br>
+    <h2>Uploaded Image</h2>
+    <div class="test">
+
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+<!--        <img src="{{ url_for('static', filename='uploads/Au_ani_00007.jpg' ) }}" alt="Non-tampered Image">-->
+        <p>Prediction: {{ non_tampered_prediction }}</p>
+    </div>
+    <div class="output tag">
+    <a href="{{ url_for('logout') }}">Press here to logout</a>
+        </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

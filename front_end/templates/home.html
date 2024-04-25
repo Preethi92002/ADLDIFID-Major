@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1 id="home" style="color: red; display: inline-block;">Home</h1>
+        <div class="nav-links1" style="display: inline-block;">
+            <a style="color: brown;" href="{{ url_for('register') }}" class="register-link">Register</a>
+        </div>
+    </div>
+    <h2 style="text-align: center; color: purple;">Advanced Deep Learning for Digital Image Forgery Detection</h2>
+    <div class="image">
+        <img src="{{ url_for('static', filename='home1.jpg') }}" alt="Home Image">
+    </div>
+</body>
+</html>

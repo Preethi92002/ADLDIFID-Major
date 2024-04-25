@@ -1,0 +1,291 @@
+/* Default styles */
+.header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items evenly, pushing them to the sides */
+    align-items: center; /* Align items vertically in the center */
+    padding: 0px; /* Add padding for spacing */;
+}
+
+.header h1,
+.nav-links1 {
+    margin-left: auto; /* Align elements vertically */
+}
+#home{
+     align-self: flex-start; /* Align the h1 tag to the top of the flexbox container */
+     margin-bottom: 0px;
+
+}
+h1 {
+    color: red;
+    padding:0px;
+
+}
+
+h2 {
+    text-align: center;
+    color: purple;
+    padding:0px;
+}
+
+.nav-links1 a {
+    color: brown;
+    margin-left: auto; /* Move the .nav-links1 to the right */
+    margin-right: 40px; /* Add margin to the right */
+}
+
+.image {
+    text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .nav-links1 a {
+        display: block; /* Make the link block-level for better stacking on smaller screens */
+        margin-bottom: 10px; /* Add some margin for better spacing */
+    }
+
+    .image img {
+        max-width: 100%; /* Make the image responsive by setting its maximum width to 100% */
+        height: auto; /* Ensure the image maintains its aspect ratio */
+    }
+}
+.image img {
+    max-width: 100%; /* Ensure image doesn't exceed its container's width */
+    max-height:100%; /* Set maximum height for the image */
+    width: 1500px; /* Allow the image to scale proportionally */
+    height: 500px; /* Allow the image to scale proportionally */
+}
+/* register css*/
+.register {
+    max-width: 1500px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+
+}
+
+.register form input[type="text"],
+.register form input[type="password"],
+.register form input[type="submit"] {
+    width: 100%;
+    padding: 9px;
+    margin-top: 30px;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+}
+
+.register form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.register form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+/* login css*/
+.login1 {
+    max-width: 1500px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 9px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+
+}
+
+.login1 form input[type="text"],
+.login1 form input[type="password"],
+.login1 form input[type="submit"] {
+    width: 100%;
+    padding: 9px;
+    margin-top: 30px;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+}
+
+.login1 form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.login1 form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* dashboard css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.accuracy {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left:1400px;
+}
+
+.accuracy a {
+    color: brown;
+    text-decoration: none;
+}
+
+.marq {
+    background-color: #ffcc00;
+    padding: 10px;
+}
+
+.dash {
+    margin-top: 50px;
+    margin-left: 550px;
+}
+
+form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .accuracy a {
+        margin-top: 10px;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* single test output css */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+
+}
+.output tag{
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.test{
+    display: block;
+    text-align: center;
+}
+img{
+    height:300px;
+    width:500px;
+}
+
+/*Accuracy.css*/
+/* style.css */
+
+/* Global styles */
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container1 img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
+.container1 img:nth-child(1),
+.container1 img:nth-child(2) {
+  flex: 0 0 50%;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container1 img:nth-child(1),
+  .container1 img:nth-child(2),
+  .container1 img:nth-child(3),
+  .container1 img:nth-child(4) {
+    flex: 0 0 100%;
+  }
+}

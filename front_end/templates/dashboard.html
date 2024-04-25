@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hello you are logged in.</h1>
+    <div class="header">
+        <div class="accuracy" style="display: inline-block;">
+            <a style="color: brown;" href="{{ url_for('accuracy') }}" class="Acuuracy-plot">Accuracy</a>
+            </div>
+
+        </div>
+    <div class="marq">
+        <marquee direction="right" behavior="alternate"
+             style="border:BLACK 2px SOLID">
+        UPLOAD YOUR IMAGE TO BE CLASSIFIED!
+    </marquee>
+
+        </div>
+<!--        <h2> UPLOAD YOUR IMAGE TO BE CLASSIFIED! </h2>-->
+    <br><br>
+    <div class="dash">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+
+    <!-- Display the uploaded image -->
+    {% if image_path %}
+        <img src="{{ image_path }}" alt="Uploaded Image">
+        <p>Image Path: {{ image_path }}</p>
+    {% endif %}
+
+    <!-- Display the prediction -->
+    {% if prediction is defined %}
+        <p>Prediction: {{ prediction }}</p>
+    {% endif %}
+
+<!--    <a href="{{ url_for('logout') }}">Press here to logout</a>-->
+</body>
+</html>
